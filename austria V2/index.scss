@@ -1,0 +1,893 @@
+@import url("./fonts.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+// @media not screen and (orientation: portrait) {
+// }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Campton Black";
+  scroll-behavior: smooth;
+}
+html {
+  width: 100vw;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hide-it-on-desktop {
+  @media not screen and (orientation: portrait) {
+    display: none !important;
+  }
+}
+
+.hide-it-on-mobile {
+  @media screen and (orientation: portrait) {
+    display: none !important;
+  }
+}
+
+.heder-img {
+  width: 100%;
+  height: 12.496vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  @media not screen and (orientation: portrait) {
+    height: 4.895833333333333vw;
+  }
+}
+
+#anime-banners-carousel {
+  margin-top: 12.496vw;
+  @media not screen and (orientation: portrait) {
+    margin-top: 4.895833333333333vw;
+  }
+  .carousel-item {
+    width: 100vw;
+    height: 140vw;
+    @media not screen and (orientation: portrait) {
+      height: 31.25vw;
+    }
+    .anime-banner {
+      width: 100vw;
+      height: 140vw;
+      @media not screen and (orientation: portrait) {
+        height: 31.25vw;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    margin-bottom: 0;
+
+    & > li {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      width: 30px;
+      height: 4px;
+      border: 1px solid rgba(142, 142, 142, 0.5);
+      opacity: 1;
+      @media not screen and (orientation: portrait) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 50px;
+        height: 6px;
+      }
+      &.active {
+        background-color: #ff1b2a;
+      }
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: auto;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: none;
+    color: #ff1b2a;
+    font-size: 30vw;
+  }
+}
+
+.button-size {
+  font-size: 5vw;
+  font-weight: 600;
+  padding: 2vw 4vw;
+  @media not screen and (orientation: portrait) {
+    font-size: 2.4vw;
+    font-weight: 600;
+    padding: 0.6vw 1.2vw;
+  }
+}
+
+.anime-banner-1-button {
+  color: #ff1b2a;
+  background-color: #ffffff;
+  position: absolute;
+  left: 4%;
+  bottom: 4%;
+  @media not screen and (orientation: portrait) {
+    left: 7.5%;
+    bottom: 6%;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: #ff1b2a;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff1b2a;
+  }
+}
+
+.anime-banner-2-button {
+  color: #ff1b2a;
+  background-color: #ffffff;
+  position: absolute;
+  right: 2.5%;
+  bottom: 8%;
+  @media not screen and (orientation: portrait) {
+    right: 48%;
+    bottom: 27.5%;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: #ff1b2a;
+  }
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff1b2a;
+  }
+}
+
+.anime-banner-3-button {
+  color: #ff1b2a;
+  background-color: #ffffff;
+  position: absolute;
+  left: 11%;
+  bottom: 4%;
+  @media not screen and (orientation: portrait) {
+    left: 6%;
+    bottom: 18%;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: #ff1b2a;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff1b2a;
+  }
+}
+
+// ------------------ BESTESELLERS ------------------------------
+// ------------------ BESTESELLERS ------------------------------
+// ------------------ BESTESELLERS ------------------------------
+
+.bestsellers-title {
+  margin-top: 8vw;
+  margin-bottom: 8vw;
+  text-align: center;
+  font-size: 8vw;
+  color: #002240;
+  @media not screen and (orientation: portrait) {
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+    font-size: 2.6vw;
+  }
+}
+
+#bestesellers-carousel {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid rgba(142, 142, 142, 0.5);
+
+  .carousel-inner {
+    padding: 6vw 0;
+    .carousel-item {
+      width: 100%;
+    }
+  }
+
+  .carousel-control-prev {
+    left: -4vw;
+  }
+  .carousel-control-next {
+    right: -4vw;
+  }
+}
+.phone-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media not screen and (orientation: portrait) {
+    width: 33%;
+  }
+
+  .phone-maker-title {
+    font-size: 3.5vw;
+    color: #707070;
+    margin-bottom: 0;
+    @media not screen and (orientation: portrait) {
+      font-size: 0.7vw;
+    }
+  }
+
+  .phone-name-title {
+    font-size: 4.2vw;
+    font-weight: 700;
+    color: #002240;
+    text-align: center;
+    margin-bottom: 0;
+    @media not screen and (orientation: portrait) {
+      font-size: 1.25vw;
+    }
+  }
+
+  & > img {
+    width: 75%;
+    height: auto;
+    margin-bottom: 6vw;
+    @media not screen and (orientation: portrait) {
+      width: 50%;
+      margin-bottom: 2.4vw;
+    }
+  }
+
+  .phone-price {
+    font-size: 6vw;
+    font-weight: 500;
+    color: #002240;
+    @media not screen and (orientation: portrait) {
+      font-size: 1.25vw;
+      font-weight: 600;
+    }
+    & > span {
+      color: #ff1b2a;
+      font-weight: 700;
+    }
+  }
+}
+
+.carousel-nav-icon {
+  color: #002240;
+  font-size: 12vw;
+  @media not screen and (orientation: portrait) {
+    font-size: 2vw;
+  }
+}
+
+.all-phones-button {
+  background-color: #002240;
+  color: #ffffff;
+  border: 1px solid #002240;
+  font-size: 4.2vw;
+  // font-weight: 500;
+  padding: 2vw 8vw;
+  margin-top: 6vw;
+  margin-bottom: 12vw;
+  @media not screen and (orientation: portrait) {
+    font-size: 0.8vw;
+    padding: 0.5vw 3vw;
+    margin-top: 2.4vw;
+    margin-bottom: 3.6vw;
+  }
+
+  &:active {
+    color: #002240;
+    background-color: #ffffff;
+    border: 1px solid #002240;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: #002240;
+    background-color: #ffffff;
+    border: 1px solid #002240;
+  }
+}
+
+.bestseller-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+// --------------- ACCORDION BANNERS -------------------------------
+.accordion-banners-container-mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .accordion-banner-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 80vw;
+
+    .accordion-banner-img {
+      width: 100%;
+      height: auto;
+    }
+    .accordion-banner-logo {
+      width: 20.796747967479675vw;
+      height: auto;
+      position: absolute;
+      left: 6%;
+      
+      top: 6.867208672086722vw;
+    }
+    
+    .accordion-banner-title {
+      color: #ffffff;
+      font-size: 6.620596205962059vw;
+      font-weight: 700;
+      line-height: 8.540650406504065vw;
+      text-transform: uppercase;
+      position: absolute;
+      left: 6%;
+      
+      top: 24.61788617886179vw;
+      margin-bottom: 0;
+    }
+    .accordion-banner-inner-wrapper {
+      width: 94%;
+      height: 100%;
+      border: 1px solid rgba(142, 142, 142, 0.5);
+      background-color: #ffffff;
+      position: absolute;
+      top: 80%;
+      left: 3%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      padding-left: 3%;
+      padding-right: 3%;
+
+      .accordion-banner-title {
+        color: #002240;
+        font-size: 6.620596205962059vw;
+        font-weight: 700;
+        line-height: 8.540650406504065vw;
+        text-transform: uppercase;
+        position: static;
+        // left: 3%;
+        
+        top: 24.61788617886179vw;
+        margin-bottom: 0;
+      }
+      
+      .accordion-banner-subtitle {
+        color: #002240;
+        font-size: 4.9620596205962055vw;
+        font-weight: 500;
+        line-height: 6.24vw;
+        // position: absolute;
+        // left: 3%;
+        
+        top: 38.05149051490515vw;
+        margin-bottom: 0;
+        & > span {
+          color: #e30613;
+          line-height: 9vw;
+        }
+      }
+
+      .active-accordion-banner-button {
+        background-color: #002240;
+        color: #ffffff;
+        border: 1px solid #002240;
+        font-size: 3.6vw;
+        font-weight: 500;
+        padding: 1.5vw 5vw;
+        position: static;
+        // left: 11.11111111111111vw;
+        // top: 60.61788617886179vw;
+        @media not screen and (orientation: portrait) {
+          font-size: 1.2vw;
+          padding: 0.5vw 1.2vw;
+          top: 23vw;
+          left: 4.270833333333333vw;
+        }
+      
+        &:active {
+          color: #002240;
+          background-color: #ffffff;
+          border: 1px solid #002240;
+        }
+      
+        &:hover {
+          text-decoration: none;
+          color: #002240;
+          background-color: #ffffff;
+          border: 1px solid #002240;
+        }
+      }
+
+      
+    }
+  }
+}
+
+.accordion-banners-container-desktop {
+  width: 100vw;
+  height: 31.25vw;
+  margin-bottom: 2.4vw;
+  display: flex;
+  position: relative;
+
+  .accordion-banner-1 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .accordion-banner-2,
+  .accordion-banner-3,
+  .accordion-banner-4 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .active-title {
+    color: #ffffff;
+    font-size: 3.1979166666666665vw;
+    font-weight: 700;
+    line-height: 3.6vw;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+  .active-subtitle {
+    color: #ffffff;
+    font-size: 1.7916666666666665vw;
+    font-weight: 700;
+    line-height: 2.1vw;
+    margin-bottom: 0;
+    white-space: nowrap;
+    & > span {
+      color: #e30613;
+    }
+  }
+
+  .unactive-banner {
+    color: #ffffff;
+    font-size: 2.5vw;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 2.8125vw;
+    text-align: center;
+    margin: 0;
+  }
+
+  .show {
+    opacity: 0;
+    animation: show 0.5s forwards;
+  }
+  .hide {
+    opacity: 1;
+    animation: hide 1s forwards;
+  }
+  .show-txt {
+    opacity: 0;
+    animation: show 1s forwards;
+  }
+  .hide-txt {
+    opacity: 0;
+  }
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes hide {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+.active-accordion-banner-button {
+  background-color: #ffffff;
+  color: #002240;
+  border: 1px solid #ffffff;
+  font-size: 3.6vw;
+  font-weight: 500;
+  padding: 1.5vw 5vw;
+  position: absolute;
+  left: 11.11111111111111vw;
+  top: 60.61788617886179vw;
+  @media not screen and (orientation: portrait) {
+    font-size: 1.2vw;
+    padding: 0.5vw 1.2vw;
+    top: 23vw;
+    left: 4.270833333333333vw;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: #002240;
+    border: 1px solid #ffffff;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #002240;
+    border: 1px solid #ffffff;
+  }
+}
+
+.active-banner {
+  .accordion-banner-logo {
+    width: 9.53125vw;
+    height: auto;
+    position: absolute;
+    top: 4.020833333333334vw;
+    left: 4.270833333333333vw;
+  }
+
+  .active-title {
+    position: absolute;
+    left: 4.270833333333333vw;
+    top: 9.84375vw;
+  }
+  .active-subtitle {
+    position: absolute;
+    left: 4.270833333333333vw;
+    top: 14.854166666666668vw;
+  }
+}
+.accordion-banner-box-1 {
+  width: 40%;
+  height: 100%;
+  position: relative;
+
+  .unactive-banner {
+    position: absolute;
+    top: 15vw;
+    left: 2vw;
+    opacity: 0;
+  }
+}
+
+.accordion-banner-box-2 {
+  width: 20%;
+  height: 100%;
+  position: relative;
+
+  .unactive-banner {
+    position: absolute;
+    top: 14.5vw;
+    left: 4.114583333333333vw;
+  }
+}
+.accordion-banner-box-3 {
+  width: 20%;
+  height: 100%;
+  position: relative;
+
+  .unactive-banner {
+    position: absolute;
+    top: 17vw;
+    left: 6vw;
+  }
+}
+
+.accordion-banner-box-4 {
+  width: 20%;
+  height: 100%;
+  position: relative;
+
+  .unactive-banner {
+    position: absolute;
+    top: 17vw;
+    left: 6vw;
+  }
+}
+
+.active-banner-2,
+.active-banner-3,
+.active-banner-4 {
+  opacity: 0;
+}
+
+.main-mtel-banner {
+  width: 100vw;
+  height: auto;
+}
+
+// --------------- VESTI --------------------------
+// --------------- VESTI --------------------------
+// --------------- VESTI --------------------------
+
+#vesti-carousel {
+  width: 90%;
+  margin-top: 12vw;
+  margin-bottom: 24vw;
+
+  .carousel-item {
+    width: 100%;
+
+    &:active {
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+
+    .carousel-item-wrapper {
+      width: 99%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid rgba(142, 142, 142, 0.5);
+
+      & > img {
+        width: 100%;
+        height: auto;
+      }
+
+      .vest-title {
+        font-size: 4.8vw;
+        font-weight: 700;
+        color: #002240;
+        margin-bottom: 0;
+        padding: 12vw 0 12vw 4vw;
+        width: 100%;
+        @media not screen and (orientation: portrait) {
+          font-size: 1.4vw;
+          padding: 3vw 0 3vw 1vw;
+        }
+      }
+
+      .vest-date {
+        width: 92%;
+        border-top: 1px solid rgba(142, 142, 142, 0.5);
+        font-size: 3.6vw;
+        color: rgba(142, 142, 142, 0.5);
+        padding: 4vw 2vw 8vw 2vw;
+        margin-bottom: 0;
+        @media not screen and (orientation: portrait) {
+          font-size: 0.8vw;
+          padding: 1vw 1vw 2vw 1vw;
+        }
+      }
+    }
+  }
+
+  .carousel-control-prev {
+    margin-left: -5vw;
+  }
+  .carousel-control-next {
+    margin-right: -5vw;
+  }
+}
+
+a {
+  &:active {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.vesti-carousel-desktop {
+  width: 100%;
+  margin: 4vw auto;
+  padding-left: 2.4vw;
+  position: relative;
+
+  .carousel-item-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(142, 142, 142, 0.5);
+    margin: 0.1vw;
+    height: 23vw;
+
+    & > img {
+      width: 100%;
+      height: auto;
+    }
+
+    .vest-title {
+      font-size: 1vw;
+      line-height: 1.6vw;
+      padding: 3vw 1vw 3vw 1vw;
+      font-weight: 700;
+      color: #002240;
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    .vest-date {
+      width: 92%;
+      border-top: 1px solid rgba(142, 142, 142, 0.5);
+      font-size: 0.8vw;
+      color: rgba(142, 142, 142, 0.5);
+      padding: 1vw 1vw 2vw 1vw;
+      margin-bottom: 0;
+    }
+  }
+
+  .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2vw;
+    .owl-dot {
+      width: 0.8vw;
+      height: 0.8vw;
+      background-color: #ffffff;
+      border-radius: 50%;
+      margin-right: 0.25vw;
+      border: 1px solid #002741;
+    }
+
+    .active {
+      width: 0.8vw;
+      height: 0.8vw;
+      background-color: #002741;
+      border-radius: 50%;
+      margin-right: 0.25vw;
+    }
+  }
+
+  .owl-nav {
+    width: 97.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    .owl-prev,
+    .owl-next {
+      color: #ffffff;
+      background-color: rgba(0, 34, 64, 0.6);
+      font-size: 7.9vw !important;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.footer-mobile {
+  width: 100%;
+  height: auto;
+}
+.footer-desktop {
+  width: 100%;
+  height: auto;
+}
+
+// ----------------------- FOOTER -------------------------------
+// ----------------------- FOOTER -------------------------------
+// ----------------------- FOOTER -------------------------------
+
+.footer-container {
+  width: 100%;
+  background-color: #022f50;
+  z-index: 11;
+  .logo-wrapper {
+    width: 100%;
+    padding: 4vw 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-logo {
+    width: 20vw;
+    height: auto;
+  }
+  .logo-title {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 3vw;
+    margin: 0;
+    font-weight: 500;
+  }
+  .card {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  .card-header {
+    // background-color: #002240;
+    background-color: #022f50;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    border: 0;
+  }
+  .sub-card {
+    & > .card-header {
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  .card-title {
+    font-size: 4.2vw;
+    font-weight: 500;
+    margin: 0;
+  }
+  .card-title-sub-1 {
+    font-size: 4.2vw;
+    font-weight: 500;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .card-title-sub-2 {
+    font-size: 4.2vw;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    display: block;
+    margin-bottom: 3.2vw;
+  }
+  .card-body {
+    padding: 0;
+    background-color: #022f50;
+    padding: 0.75rem 1.25rem;
+  }
+
+  .bi-chevron-down,
+  .bi-chevron-compact-down {
+    position: absolute;
+    right: 10%;
+  }
+}
+
+.sidebar-icons {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  filter: drop-shadow(0 -1px 6px #022f50);
+}
